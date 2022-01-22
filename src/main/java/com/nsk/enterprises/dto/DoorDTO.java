@@ -1,5 +1,10 @@
 package com.nsk.enterprises.dto;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+@Component
+@ConfigurationProperties(prefix="doorservice")
 public class DoorDTO {
 	private long doorId;
 	private String doorSize;
